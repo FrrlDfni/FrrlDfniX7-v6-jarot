@@ -28,7 +28,7 @@ const PORT = process.env.PORT || 3000
 
 global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
 // console.log({ opts })
-global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\- ').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
+global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
 
 global.db = new Low(
       new JSONFile(`${opts._[0] ? opts._[0] + '_' : ''}database.json`)
