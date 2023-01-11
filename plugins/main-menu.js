@@ -258,9 +258,9 @@ let fot = `𝙽𝚘𝚝𝚎 𝙹𝚒𝚔𝚊 𝙼𝚎𝚗𝚎𝚖𝚞𝚔𝚊�
 `
 const listMessage = {
 footer: fot,
-text: 'Made By FrrlDfniX7 Offc',
+text: 'Made By FrrlDfniX7',
 mentions: await conn.parseMention(jarot),
-title: FrrlDfniX7,
+title: jarot,
 buttonText: `CLICK HERE ⎙`, 
 sections
 }
@@ -324,11 +324,11 @@ return conn.sendMessage(m.chat, listMessage, { quoted: fkontak, mentions: await 
 	 message: { "contactMessage": { "title":"sri","h": `haloo`, 'jpegThumbnail': fs.readFileSync('./thumbnail.jpg')}}
 	}
     //------------------ DOCUMENT
-let gh = 'https://github.com/JarotOffc'
+let gh = 'https://github.com/JarotOffc?tab=repositories'
 let buttonMessage= {
 'document':{'url':gh},
 'mimetype': 'application/pdf',
-'fileName':'𝙱𝚘𝚝 𝚆𝚑𝚊𝚝𝚜𝙰𝚙𝚙 𝙱𝚢 𝙵𝚛𝚛𝚕𝙳𝚏𝚗𝚒𝚇𝟽',
+'fileName':'𝙱𝚘𝚝 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝙱𝚢 𝙵𝚛𝚛𝚕𝙳𝚏𝚗𝚒𝚇𝟽',
 'fileLength':'99999999999999',
 'pageCount':'999',
 'contextInfo':{
