@@ -1,5 +1,5 @@
 let handler = (m, { usedPrefix, command, text }) => {
-    if (!text) throw `contoh:\n${usedPrefix + command} 2002 02 25`
+    if (!text) throw `contoh:\n${usedPrefix + command} 2004 09 29`
 
     const date = new Date(text)
     if (date == 'Invalid Date') throw date
@@ -22,7 +22,7 @@ Zodiak : ${zodiac}
 `.trim()
     m.reply(teks)
 }
-handler.help = ['zodiac *2002 02 25*']
+handler.help = ['zodiac *2004 09 29*']
 handler.tags = ['tools']
 
 handler.command = /^zodia[kc]$/i
